@@ -15,7 +15,7 @@ struct SegmentViewApp: App {
     var body: some Scene {
         WindowGroup {
             VStack {
-                SegmentControlView(items: items, selection: $select)
+                SegmentControlView(items: items, selection: $select, defaultXSpace: 10)
                     .padding(.vertical, 16)
 
                 Text("Page title \"\(items[select])\"")
